@@ -28,32 +28,29 @@ const ToastSim = () => {
       (response) => {
         toast({
           variant: "destructive",
-          title: response.toString(),
+          title: response.message,
+          // You should use response.message instead of response.toString() because on response object we do get a property named message which contains the error message
         });
       }
     );
   }
 
   return (
-    <>
-      <form
-        className="flex flex-col items-start gap-4"
-        onSubmit={submitHandler}>
-        <label htmlFor="name" className="font-semibold text-5xl">
-          Name
-        </label>
-        <input
-          type="text"
-          id="name"
-          className="border-2 border-black p-2 rounded-md w-64"
-          value={inputValue}
-          onChange={(e) => {
-            setInputValue(e.target.value);
-          }}
-        />
-        <Button>Submit</Button>
-      </form>
-    </>
+    <form className="flex flex-col items-start gap-4" onSubmit={submitHandler}>
+      <label htmlFor="name" className="font-semibold text-5xl">
+        Name
+      </label>
+      <input
+        type="text"
+        id="name"
+        className="border-2 border-black p-2 rounded-md w-64"
+        value={inputValue}
+        onChange={(e) => {
+          setInputValue(e.target.value);
+        }}
+      />
+      <Button>Submit</Button>
+    </form>
   );
 };
 
