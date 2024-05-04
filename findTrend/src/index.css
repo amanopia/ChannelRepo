@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  --neon: #a8ff35;
+}
+
+body {
+  background-color: black;
+  min-height: 100vh;
+  color: #fff;
+}

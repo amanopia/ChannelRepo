@@ -1,0 +1,240 @@
+.hero-container {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin-bottom: 10rem;
+}
+.heading {
+  font-family: "Poppins";
+
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-para {
+  text-align: center;
+  color: #c7c7c7;
+  font-family: "Montserrat";
+}
+
+.hero-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+
+.hero-button-container button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex;
+  gap: 0.2rem;
+  color: #000;
+  background: #a8ff35;
+
+  font-weight: 700;
+
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  height: min-content;
+}
+
+.hero-button-container button img {
+}
+
+@media (max-width: 639px) {
+  .heading {
+    font-size: 2rem;
+  }
+  .hero-para {
+    width: 80%;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.7;
+  }
+  .hero-button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-button-container button {
+    flex-direction: row;
+    font-weight: 600;
+    font-size: 0.8rem;
+
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+  }
+  .hero-button-container button img {
+    height: 18px;
+  }
+
+  .hero-button-container div:nth-child(2) img,
+  .hero-button-container div:nth-child(2) svg {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .heading {
+    font-size: 2rem;
+  }
+  .hero-para {
+    width: 80%;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.7;
+  }
+  .hero-button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-button-container button {
+    flex-direction: row;
+    font-weight: 600;
+    font-size: 0.8rem;
+
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+  }
+  .hero-button-container button img {
+    height: 18px;
+  }
+
+  .hero-button-container div:nth-child(2) img,
+  .hero-button-container div:nth-child(2) svg {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading {
+    font-size: 4rem;
+  }
+  .hero-para {
+    width: 60%;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.7;
+  }
+  .hero-button-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  .hero-button-container button {
+    flex-direction: row;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+  }
+  .hero-button-container button img {
+    height: 25px;
+  }
+
+  .hero-button-container div:nth-child(2) img,
+  .hero-button-container div:nth-child(2) svg {
+    display: block;
+  }
+}
+@media (max-width: 979px) {
+  .brands-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-family: "Montserrat";
+
+    margin-top: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+  .brands-container div {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    background: #141414;
+    padding: 1.3rem 1rem;
+    width: 20rem;
+    font-size: 1.2rem;
+  }
+  .brands-container div img {
+    height: 30px;
+  }
+  .brands-container div:nth-child(odd) {
+    transform: rotate(-3deg);
+
+    z-index: 1;
+  }
+  .brands-container div:nth-child(even) {
+    transform: rotate(5deg);
+    z-index: 0;
+  }
+}
+@media (min-width: 980px) {
+  .brands-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    font-family: "Montserrat";
+
+    margin-top: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+
+  .brands-container div {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    background: #141414;
+    padding: 1.3rem 1rem;
+    width: 20rem;
+    font-size: 1.2rem;
+  }
+  .brands-container div img {
+    height: 30px;
+  }
+  .brands-container div:nth-child(odd) {
+    transform: rotate(-3deg);
+
+    z-index: 1;
+  }
+  .brands-container div:nth-child(even) {
+    transform: rotate(5deg);
+    z-index: 0;
+  }
+  .brands-container div:nth-child(1) {
+    left: 0;
+    position: absolute;
+  }
+  .brands-container div:nth-child(2) {
+    position: absolute;
+    left: 20%;
+    top: 2rem;
+  }
+  .brands-container div:nth-child(3) {
+    left: 50%;
+    position: absolute;
+  }
+  .brands-container div:nth-child(4) {
+    right: 0;
+    position: absolute;
+
+    top: 2rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  .brands-container {
+    width: 45%;
+  }
+}
